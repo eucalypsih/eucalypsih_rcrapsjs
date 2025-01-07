@@ -1,4 +1,12 @@
 # eucalypsih_rcrapsjs
+```javascript
+const o = {};
+o.__defineGetter__("fungsiKu", function () {
+    return 5;
+});
+console.log(o.fungsiKu);
+```
+
 
 ```javascript
 const fruits = {Apples: 450, Bananas: 500};
