@@ -2,8 +2,8 @@
 
 ```javascript
 const fruits = {Apples: 450, Bananas: 500};
-console.log(Object.entries(fruits));
-console.log(Object.fromEntries(Object.entries(fruits)));
+console.log(Object.entries(fruits)); //[ [ 'Apples', 450 ], [ 'Bananas', 500 ] ]
+console.log(Object.fromEntries(Object.entries(fruits))); // { Apples: 450, Bananas: 500 }
 
 ```
 ```javascript
