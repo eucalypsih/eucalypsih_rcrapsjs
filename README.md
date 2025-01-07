@@ -14,3 +14,10 @@ console.log(Object.values(fruits)); // [ 450, 500 ]
 const fruits = {Apples: 450, Bananas: 500};
 console.log(Object.keys(fruits)); // [ 'Apples', 'Bananas' ]
 ```
+
+NodeJs v20.0.0
+```javascript
+Object.groupBy();
+```
+
+
