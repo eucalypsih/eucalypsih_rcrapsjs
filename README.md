@@ -16,6 +16,16 @@ const o = {
 o.fungsiKu = 6;
 console.log(o.ano);
 ```
+```javascript
+const o = {};
+Object.defineProperty(o, "fungsiKu", {
+    set(val) {
+        this.ano = val;
+    }
+});
+o.fungsiKu = 6;
+console.log(o.ano);
+```
 
 ```javascript
 const o = {};
