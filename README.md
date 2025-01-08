@@ -4,7 +4,16 @@ const o = {};
 o.__defineGetter__("fungsiKu", function () {
     return 5;
 });
-console.log(o.fungsiKu);
+console.log(o.fungsiKu); // 5
+```
+
+```javascript
+const o = {
+    get fungsiKu() {
+        return 5;
+    }
+};
+console.log(o.fungsiKu); // 5
 ```
 
 
