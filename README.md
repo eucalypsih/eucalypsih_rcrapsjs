@@ -1,6 +1,15 @@
 # eucalypsih_rcrapsjs
 ```javascript
 const o = {};
+o.__defineSetter__("fungsiKu",  function(val) {
+    this.ano = val;
+});
+o.fungsiKu = 6;
+console.log(o.ano);
+```
+
+```javascript
+const o = {};
 o.__defineGetter__("fungsiKu", function () {
     return 5;
 });
