@@ -16,6 +16,18 @@ const o = {
 console.log(o.fungsiKu); // 5
 ```
 
+```javascript
+const o = {};
+Object.defineProperty(o, "fungsiKu", {
+    get() {
+         return 5;
+     },
+     configurable: true,
+     enumerable: true
+});
+console.log(o.fungsiKu); // 5
+```
+
 
 ```javascript
 const fruits = {Apples: 450, Bananas: 500};
