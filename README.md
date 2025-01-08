@@ -7,6 +7,15 @@ o.__defineSetter__("fungsiKu",  function(val) {
 o.fungsiKu = 6;
 console.log(o.ano);
 ```
+```javascript
+const o = {
+    set fungsiKu(val) {
+        this.ano = val; 
+    }
+};
+o.fungsiKu = 6;
+console.log(o.ano);
+```
 
 ```javascript
 const o = {};
