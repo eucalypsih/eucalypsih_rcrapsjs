@@ -1,5 +1,22 @@
 # eucalypsih_rcrapsjs
 ```javascript
+const o = {
+    counter: 0
+};
+Object.defineProperty(o, "decrement", {
+    get() {
+        return this.da = 0;
+    },
+    writeable: true,
+    enumerable: false,
+    configurable: true
+});
+console.log(o); // { counter: 0 }
+o.decrement
+console.log(o); // { counter: 0, da: 0 }
+```
+
+```javascript
 const o = {};
 o.__defineSetter__("fungsiKu",  function(val) {
     this.ano = val;
