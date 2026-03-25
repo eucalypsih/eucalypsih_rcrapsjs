@@ -1,8 +1,51 @@
 # eucalypsih_rcrapsjs
+
 ```javascript
-// assign(url) → menambahkan ke history browser
-document.location.assign('https://example.com');
+console.log(document.location.href);
+// Ini hanya membaca URL saat ini.
+// Contoh output: "https://www.example.com/page1.html"
 ```
+
+```javascript
+document.location.href = "https://www.example.com/page2.html";
+// Browser akan langsung menuju URL baru.
+// Sama seperti klik link biasa.
+// Menyimpan riwayat halaman sebelumnya, sehingga tombol "Back" berfungsi.
+```
+
+```javascript
+document.location.assign("https://www.example.com/page2.html");
+// Fungsi ini mirip dengan href = ..., browser navigasi ke URL baru.
+// Menyimpan riwayat, tombol "Back" bisa digunakan.
+```
+
+```javascript
+document.location.replace("https://www.example.com/page2.html");
+// Mengganti halaman saat ini dengan halaman baru tanpa menyimpan di history. 
+// Tombol "Back" tidak akan kembali ke halaman sebelumnya.
+// Berguna misal untuk redirect otomatis setelah login.
+```
+
+```javascript
+document.location.reload(true);
+// Memuat ulang halaman saat ini.
+```
+
+```javascript
+document.location.reload();
+// untuk memaksa reload dari server (bukan cache).
+```
+
+```javascript
+document.location.protocol = 
+document.location.host = "www.example.com:443";
+document.location.hostname = "www.example.com";
+document.location.port = "443";
+document.location.pathname = "/page3.html";
+document.location.search = "?q=javascript";
+document.location.hash = "#top";
+```
+
 
 ```javascript
 const o = {
