@@ -43,7 +43,7 @@ document.location.hostname = "www.example.com";
 document.location.port = "443";
 document.location.pathname = "/page3.html";
 document.location.search = "?q=javascript";
-document.location.hash = "#top";
+document.location.hash = "#section2"; // Navigasi langsung ke elemen dengan ID 'section2'
 ```
 
 
