@@ -1,5 +1,10 @@
 # eucalypsih_rcrapsjs
 ```javascript
+// assign(url) → menambahkan ke history browser
+document.location.assign('https://example.com');
+```
+
+```javascript
 const o = {
     counter: 0
 };
