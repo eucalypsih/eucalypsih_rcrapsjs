@@ -46,6 +46,24 @@ document.location.search = "?q=javascript";
 document.location.hash = "#section2"; // Navigasi langsung ke elemen dengan ID 'section2'
 ```
 
+```javascript
+let obj = {
+    _name: 'John',
+    
+    get name() {
+        return this._name;
+    },
+    
+    set name(value) {
+        this._name = value;
+    }
+};
+
+console.log(obj.name);  // Mengakses getter
+obj.name = 'Jane';      // Mengakses setter
+console.log(obj.name);  // Mengakses getter lagi
+```
+
 
 ```javascript
 const o = {
